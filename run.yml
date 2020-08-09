@@ -1,0 +1,9 @@
+---
+- name: CHECK VERSION ANSIBLE
+
+task:
+  - shell: ansible --version
+    register: result
+  
+  - debug:
+      msg: {{ result.stdout }}
