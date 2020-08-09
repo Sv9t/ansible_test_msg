@@ -1,5 +1,6 @@
 ---
 - name: CHECK VERSION ANSIBLE
+  hosts: all
 
 task:
   - shell: ansible --version
